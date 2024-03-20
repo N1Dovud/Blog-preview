@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Figtree";
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format("ttf");
+    font-style: normal;
+}
+@font-face {
+    font-family: "Figtree";
+    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format("ttf");
+    font-style: italic;
+}
+@media screen and (max-width: 375px)
+{
+    html {
+        font-size: 13.33px;
+    }
+}
+@media screen and (max-width: 200px)
+{
+    html {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 100px)
+{
+    html {
+        font-size: 6px;
+    }
+}
+@media screen and (min-width: 1440px)
+{
+    html {
+        font-size: 16px;
+    }
+}
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --Yellow: hsl(47, 88%, 63%);
+}
+body {
+    background-color: var(--Yellow);
+    font-family: "Figtree", sans-serif;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-weight: 500;
+    padding:1rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 24rem;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    background-color: var(--White);
+    border-radius: 1.25rem;
+    box-shadow: 0.5rem 0.5rem 0 var(--Black);
+    transition: all 0.2s linear;
+    border:1px solid var(--Black);
+}
+main:hover {
+    box-shadow:1rem 1rem;
+}
+#svg {
+    border-radius: 20px;
+    max-width: 100%;
+}
+#yellow-text {
+    font-weight: 800;
+    background-color: var(--Yellow);
+    margin-right: auto;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+h1 {
+    font-size: 1.5rem;
+    line-height: 150%;
+    font-weight: 700;
+    cursor: pointer;
+}
+h1:hover{
+    color: var(--Yellow);
+}
+.text {
+    color:var(--Grey);
+    line-height: 150%;
+}
+.author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+#author-image {
+    width: 2rem;
+}
+span {
+    line-height: 150%;
+    font-weight: 800;
+}
